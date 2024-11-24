@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link href="https://unpkg.com/boxicons@2.2.4/css/boxicons.min.css" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppons",sans-serif;
+    }
+    body{
+        /* background: #1a4394; */
+    }
+    section{
+        position: relative;
+        width: calc(min(80rem,90%));
+        margin:0 auto;
+        min-height: 100vh;
+        column-gap: 3rem;
+        padding-block: min(20vh,3rem);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .swiper-container{
+        position: relative;
+    }
+    .swiper{
+        width: 100%;
+        padding: 60px 0 95px 0;
+    }
+    .swiper-slide{
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        position: relative;
+    }
+    .swiper-slide .slide-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 400px;
+    }
+    .swiper-3d .swiper-slide-shadow {
+    background: rgba(0,0,0,.15);
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+
+.swiper-3d .swiper-slide-shadow-top {
+    background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+
+.swiper-3d .swiper-slide-shadow-bottom {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+    .swiper-slide .slide-content img{
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .swiper-button-prev{
+        background: rgba(255, 255, 255, 0.777);
+        border-radius: 50%;
+        top: 47%;
+        left: -30px;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 2px 11px rgba(0,0,0,0.17);
+    }
+    /* .swiper-button-prev::after{content: "";} */
+    .swiper-button-prev .bx{font-size: 10px;
+    }
+
+    .swiper-button-next{
+        background: rgba(255, 255, 255, 0.777);
+        border-radius: 50%;
+        top: 47%;
+        right: -30px;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 2px 11px rgba(0,0,0,0.17);
+    }
+    /* .swiper-button-next::after{content: ">";} */
+    .swiper-button-next .bx{font-size: 10px;
+    }
+@media(min-width:760px){
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: flex;
+    }
+}
+
+ /* Basic carousel styling */
+ .carousel-container {
+    position: relative;
+    /* width: 80%;
+    margin: auto;
+    overflow: hidden; */
+}
+
+.carousel {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.carousel-image {
+    width: 100%;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: 600px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* Navigation buttons (Previous & Next) */
+button {
+    position: absolute;
+    top: 50%;
+    padding: 10px ;
+    background-color: rgba(251, 246, 246, 0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(247, 243, 243, 0.8);
+    color: black;
+}
+
+/* Position Previous button */
+#prevBtn {
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+/* Position Next button */
+#nextBtn {
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper carousel-container">
+                <div class="swiper-wrapper carousel">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="image/r.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="image/t.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="image/t1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="image/rr.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                         <img src="image/rtyr.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                              <img src="image/343.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="image/t3.jpg"class="carousel-image" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                             <img src="image/yy.jpg" class="carousel-image"alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev" id="swiper_button_prev">
+                <i class="bx bx-left-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-next" id="swiper_button_next">
+                <i class="bx bx-right-arrow-alt"></i>
+            </div>
+        </div>
+    </section>
+       <!-- Modal to enlarge image -->
+<div id="imageModal" class="modal">
+    <span class="close" id="closeBtn">&times;</span>
+    <button class="prev" id="prevBtn">&#10094;</button>
+    <img class="modal-content" id="modalImage">
+    <button class="next" id="nextBtn">&#10095;</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+  
+    var swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      autoplayHoverPause:true,
+
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      effect:"coverflow",
+    grabCursor:true,
+         centeredSliders:true,
+      coverflowEffect:{
+            rotate:0,
+            stretch:3,
+            depth:300,
+            modifire:5,
+            sliderShadows:true,
+    //         animateOut:'fadeOut',
+    //   animateIn:'fadeIn',
+        },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 2300,
+        disableOnInteraction: false, 
+
+      },
+      Keyboard:{
+            enabled:true
+        },
+        mousewheel:{
+            thresholDelta:70
+        },
+      breakpoints:{
+            575:{
+                slidePerView:2.5
+            },
+            768:{
+                slidesPerView:3
+            },
+            1024:{
+                slidesPerView:5
+
+            }
+        }
+    });
+
+</script>
+<script>
+    // Get modal and image elements
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeBtn = document.getElementById("closeBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const swiper_button_prev =document.getElementById("swiper_button_prev");
+const swiper_button_next =document.getElementById("swiper_button_next");
+
+// Get all carousel images
+const images = document.querySelectorAll(".carousel-image");
+
+// Initialize a variable to track the current image index
+let currentIndex = 0;
+
+// Function to open the modal with the clicked image
+images.forEach((img, index) => {
+    img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImage.src = this.src;
+        currentIndex = index; // Set the current index
+        swiper_button_prev.style.display = "none";  
+              swiper_button_next.style.display = "none";
+
+    });
+});
+
+// Close modal when close button is clicked
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+// Close modal when clicking outside of the image
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+// Function to show the previous image
+prevBtn.addEventListener("click", function() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    modalImage.src = images[currentIndex].src;
+});
+
+// Function to show the next image
+nextBtn.addEventListener("click", function() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    modalImage.src = images[currentIndex].src;
+});
+</script>
+</body>
+</html>
