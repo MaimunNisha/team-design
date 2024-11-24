@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .nav {
+            height: 500px;
+            width: 100%;
+            font-size: 20px;
+            background-color: rgb(147, 95, 95);
+            text-align: center;
+
+        }
+
+        .b {
+            color: rgb(242, 241, 240);
+            font-size: 50px;
+            margin: 50px;
+       
+
+        }
+
+
+
+        .team {
+            width: 100%;
+            height: 400px;
+            position: relative;
+
+        }
+
+        .meamber-group {
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: -150px;
+
+
+        }
+
+        .meamber {
+            height: 400px;
+            width: 20%;
+            position: relative;
+        }
+
+
+
+        .img {
+            height: 300px;
+            width: 250px;
+            box-sizing: border-box;
+            border: solid #dca7a7 5px;
+            border-radius: 10px;
+            position: absolute;
+
+
+        }
+
+        .img1 {
+            height: 300px;
+            width: 250px;
+            box-sizing: border-box;
+            border: solid #dca7a7 5px;
+            border-radius: 10px;
+            position: absolute;
+            top: 80px;
+
+        }
+
+        .img2 {
+            height: 300px;
+            width: 250px;
+            box-sizing: border-box;
+            border: solid #dca7a7 5px;
+            border-radius: 10px;
+
+            position: absolute;
+
+        }
+
+        .img3 {
+            height: 300px;
+            width: 250px;
+            box-sizing: border-box;
+            border: solid #dca7a7 5px;
+            border-radius: 10px;
+            top: 80px;
+            position: absolute;
+
+        }
+
+        .image {
+            width: 240px;
+            height: 290px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .p {
+            font-size: 25px;
+            margin-left: 10px;
+
+        }
+
+        .span {
+            font-size: 20px;
+            color: rgb(71, 71, 71);
+            margin-left: 12px;
+        }
+
+        .fa {
+            padding: 8px;
+            font-size: 15px;
+            width: 15px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa-facebook {
+            background: rgb(147, 95, 95);
+            color: white;
+        }
+
+        .fa-twitter {
+            background: rgb(147, 95, 95);
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: rgb(147, 95, 95);
+            color: white;
+        }
+
+        .fa-instagram {
+            background: rgb(147, 95, 95);
+            color: white;
+        }
+
+        .icon {
+            margin: 10px;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            opacity: 0.3;
+            width: 100%;
+            height: 0;
+            transition: .7s ease;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+            
+    
+        }
+        .container:hover .fa {
+            font-size: 30px;
+          color : rgb(147, 95, 95);
+           background: white;
+        }
+        .container:hover .p{
+            color:rgb(147, 95, 95) ;
+            font-size: 30px;
+        }
+        .container:hover .span{
+            color:rgb(10, 9, 9) ;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <br>
+
+        <h1 class="b">We're Super Professional At Our Skills
+        </h1>
+
+
+        <p class="p" >Sample text. Click to select the text box. Click again or double<br> click to
+            start editing the text.</p>
+    </div>
+
+
+    <div class="team d-flex">
+        <div class="meamber-group d-flex">
+            <div class="meamber">
+                <div class="container">
+
+                    <div class="img">
+                        <img src="./image/343.jpg" alt="team" class="image">
+                        <div class="overlay">
+                        </div>
+                        <div class="contant">
+                            <p class="p">Nat Reynolds
+                            </p>
+                            <span class="span">Owner
+
+                            </span>
+                            <p class="icon">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meamber">
+                <div class="img1">
+                    <div class="container">
+                        <img src="./image/q23.jpg" alt="team" class="image">
+                        <div class="overlay">
+                        </div>
+                        <div class="contant">
+                            <p class="p">Celia Almeda
+                            </p>
+                            <span class="span">Baker</span>
+
+                            <p class="icon">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="meamber">
+                <div class="img2">
+                    <div class="container">
+                        <img src="./image/e3w.jpg" alt="team" class="image">
+                        <div class="overlay">
+                        </div>
+                        <div class="contant">
+                            <p class="p">Frank Kinney
+
+                            </p>
+                            <span class="span">Baker
+                            </span>
+                            <p class="icon">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meamber">
+                <div class="container">
+
+                    <div class="img3">
+                        <img src="./image/111.jpg" alt="team" class="image">
+                        <div class="overlay">
+                        </div>
+                        <div class="contant">
+                            <p class="p">Mark Smith
+
+                            </p>
+                            <span class="span">Baker
+                            </span>
+                            <p class="icon">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<a href="image_style7.html">image_style7</a>
+<a href="image_style8.html">image_style8</a>
+<a href="ourteam2.html">ourteam2</a>
+<a href="ourteam3.html">ourteam3</a>
+<a href="project11.html">project11</a>
+<a href="team2.html">team2</a>
+</body>
+
+</html>

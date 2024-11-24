@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #b8e1ef;
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav {
+            height: 300px;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            color:#0070b2;
+        }
+
+        .layout {
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .row {
+            height: 550px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .col4 {
+            height: 380px;
+            width: 20%;
+            background-color: aliceblue;
+            margin: 15px;
+            position: relative;
+        }
+
+        .img {
+            height: 380px;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            top: -50px;
+        }
+
+        .image {
+            height: 200px;
+            width: 220px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: solid rgb(218, 216, 216) 2px;
+            transition: .7s ease;
+            
+        }
+
+        .zoom {
+          text-align: center;
+            transition: .2s;
+            width: 100%;
+            height: 220px;
+
+        }
+
+        .img:hover .image {
+            width: 240px;
+            height: 220px;
+            
+        }
+.img:hover .contant{
+    
+    color:#007ece;
+
+
+}
+.img:hover .h4{
+    color:#37c3f1;}
+        .h3 {
+            font-size: 25px;
+        }
+
+        .h4 {
+            font-size: 20px;
+            color: gray;
+        }
+
+        .submit {
+            width: 80px;
+            background-color: #93cfd9;
+            color: rgb(26, 25, 25);
+            padding: 14px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .img:hover .submit{
+            background-color:#37c3f1;
+            ;
+        }
+
+        .container:hover .image {
+            height: 230px;
+            width: 270px;
+            border-radius: 10px;
+        }
+
+        .contant {
+            text-align: center;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1><u>OUR TEAM</u></h1>
+        Transform your lifestyle with our top-tier personal trainers.
+    </div>
+    <div class="layout">
+        <div class="row d-flex">
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+
+                        <img src="./image/r.jpg" alt="" class="image">
+                        
+                       
+                    </div>
+                    <div class="contant">
+                        <h3 class="h3"><b>Jeffrey Brown</b></h3>
+                        <h4 class="h4">Head Coach & Director
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+                        <img src="./image/t43.jpg" alt="" class="image">
+                    </div>
+                    <div class="contant">
+                        <h3 class="h3"><b>CHRIS RICHMON</b></h3>
+                        <h4 class="h4">Coach & General Manager
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+                    <img src="./image/rtyr.jpg" alt="" class="image">
+                   
+                </div>  
+                    <div class="contant">
+                        <h3 class="h3"><b>JENNIE ROBERTS</b></h3>
+                        <h4 class="h4">Coach
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+                    <img src="./image/yy.jpg" alt="" class="image">
+                    </div><div class="contant">
+                        <h3 class="h3"><b>ALEX GREENFIELD</b></h3>
+                        <h4 class="h4">Crossfit Guru
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+
+                    <img src="./image/t.jpg" alt="" class="image">
+                    
+                </div>
+                    <div class="contant">
+                        <h3 class="h3"><b>AMANDA SMITH
+                            </b></h3>
+                        <h4 class="h4">Coach
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+                    <img src="./image/4 (1).jpg" alt="" class="image">
+                    </div><div class="contant">
+                        <h3 class="h3"><b>NICK DAVIS
+                            </b></h3>
+                        <h4 class="h4">Coach
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+
+                    <img src="./image/89.jpg" alt="" class="image">
+                    
+                    
+                </div><div class="contant">
+                        <h3 class="h3"><b>MEGAN CONVAY
+                            </b></h3>
+                        <h4 class="h4">Coach
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="img">
+                    <div class="zoom">
+                    <img src="./image/rr.jpg" alt="" class="image">
+                    </div><div class="contant">
+                        <h3 class="h3"><b>PATRIK FRANK
+                            </b></h3>
+                        <h4 class="h4">Coach
+                        </h4>
+                        <div class="d-flex" style=" justify-content: center; margin: 35px;">
+                            <input type="submit" value="Bio " class="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="image_style7.html">image_style7</a>
+<a href="image_style8.html">image_style8</a>
+<a href="ourteam2.html">ourteam2</a>
+<a href="ourteam3.html">ourteam3</a>
+<a href="project11.html">project11</a>
+<a href="team2.html">team2</a>
+</body>
+
+</html>

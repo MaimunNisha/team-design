@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_style-7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 30px;
+            font-size: 40px;
+            text-align: center;
+            color: #0d569f;
+        }
+
+        .container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box3 {
+            height: 205px;
+            width: 32%;
+            background-color: #1978a5;
+            border-radius: 20px;
+            position: relative;
+            transition: 0.7s;
+            overflow: hidden;
+
+        }
+
+        .innerbox {
+            height: 200px;
+            width: 100%;
+            background-color: #d2ebf7;
+            border-radius: 20px;
+            position: absolute;
+            transition: 0.7s;
+            bottom: 5px;
+            text-align: center;
+
+        }
+
+        .innerbox1 {
+            height: 205px;
+            width: 100%;
+            background-color: #1978a5;
+            border-radius: 20px;
+            position: absolute;
+            top: -205px;
+            transition: 0.7s;
+        }
+
+        .innerbox img {
+            margin: 10px;
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            border: #91c6df dashed 1px;
+            box-shadow:  1px 3px 3px 1px #91c6df;
+        }
+
+        .innerbox p {
+            color: #0d569f;
+            font-size: 25px;
+        }
+
+        .innerbox1 p {
+            padding: 10px;
+        }
+
+        .box3:hover .innerbox1 {
+            top: 0px;
+        }
+
+        .box3:hover .innerbox {
+            bottom: -200px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>My Team</h1>
+    <div class="container">
+        <div class="box3">
+            <div class="innerbox">
+                <img src="./image/t1.jpg" alt="">
+                <p>NINA NORTAN</p>
+                <small>Web Designer</small>
+            </div>
+            <div class="innerbox1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla quia enim veniam
+                    suscipit reprehenderit laborum corrupti, labore mollitia non quos sequi autem sed, tempora, itaque
+                    necessitatibus aliquid. Porro, reiciendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde ad porro reiciendis
+                    consectetur nemo enim ab rerum, provident libero.</p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="innerbox">
+                <img src="./image/t2.jpg" alt="">
+                <p>JOHN SHORE</p>
+                <small>Frontend-Developer</small>
+            </div>
+            <div class="innerbox1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla quia enim veniam
+                    suscipit reprehenderit laborum corrupti, labore mollitia non quos sequi autem sed, tempora, itaque
+                    necessitatibus aliquid. Porro, reiciendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde ad porro reiciendis
+                    consectetur nemo enim ab rerum, provident libero.</p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="innerbox">
+                <img src="./image/t3.jpg" alt="">
+                <p>ALEXA ERACAL</p>
+                <small>Backend-Developer</small>
+            </div>
+            <div class="innerbox1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nulla quia enim veniam
+                    suscipit reprehenderit laborum corrupti, labore mollitia non quos sequi autem sed, tempora, itaque
+                    necessitatibus aliquid. Porro, reiciendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde ad porro reiciendis
+                    consectetur nemo enim ab rerum, provident libero.</p>
+            </div>
+        </div>
+    </div>
+    <a href="image_style7.html">image_style7</a>
+<a href="image_style8.html">image_style8</a>
+<a href="ourteam2.html">ourteam2</a>
+<a href="ourteam3.html">ourteam3</a>
+<a href="project11.html">project11</a>
+<a href="team2.html">team2</a>
+</body>
+
+</html>
